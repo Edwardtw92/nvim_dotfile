@@ -1,10 +1,11 @@
 # Edwardtw92's Nvim Config (and Zathura)
-The contents of this repository will eventually be moved to a repository with my other dotfiles, a link will be updated in the future. In addition, I am hoping to migrate my nvim config from Vimscript to Lua and from [vim-plug](https://github.com/junegunn/vim-plug) to [lazy.nvim](https://github.com/folke/flash.nvim)
+The contents of this repository will eventually be moved to a repository with my other dotfiles, a link will be updated in the future. In addition, I am hoping to migrate my nvim config from Vimscript to Lua and from [vim-plug](https://github.com/junegunn/vim-plug) to [lazy.nvim](https://github.com/folke/flash.nvim).
 
 ![Screenshot](https://github.com/Edwardtw92/nvim_dotfile/blob/main/screenshot.jpg)
 
 ## LaTeX Essential
-In order to have a working LaTeX environment, ensure [LaTeX](https://www.latex-project.org/get/), [Neovim](https://neovim.io/), a Neoivim Plugin manager (I am using [vim-plug](https://github.com/junegunn/vim-plug)), and a pdf viewer (I am using [Zathura](https://pwmt.org/projects/zathura/))are installed, and the only essential Neoivim plugins are:
+In order to have a working LaTeX environment, ensure [LaTeX](https://www.latex-project.org/get/), [Neovim](https://neovim.io/), a Neoivim Plugin manager (I am using [vim-plug](https://github.com/junegunn/vim-plug)), and a pdf viewer (I am using [Zathura](https://pwmt.org/projects/zathura/))are installed
+The only essential Neoivim plugins are:
 - [vimtex](https://github.com/lervag/vimtex)
 - [ultisnips](https://github.com/SirVer/ultisnips)
 - [coc.nvim](https://github.com/neoclide/coc.nvim)
@@ -53,4 +54,4 @@ Note: [vim-colemak](https://github.com/jooize/vim-colemak) and some other specif
 - [catppuccin](https://github.com/catppuccin/nvim)
 
 ## Inspiration
-My set up are highly inspired by Gilles Castel's setup which can be found [here](https://castel.dev/post/lecture-notes-1/) and [here](https://github.com/gillescastel/latex-snippets)
+My set up are highly inspired by Gilles Castel's setup which can be found [here](https://castel.dev/post/lecture-notes-1/) and [here](https://github.com/gillescastel/latex-snippets).
