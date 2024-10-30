@@ -1,0 +1,1248 @@
+snippet box "Box"
+`!p snip.rv = '┌' + '─' * (len(t[1]) + 2) + '┐'`
+│ $1 │
+`!p snip.rv = '└' + '─' * (len(t[1]) + 2) + '┘'`
+$0
+endsnippet
+
+snippet tbf "textbf" wi
+\textbf{${1:${VISUAL}}}$0
+endsnippet
+
+snippet tilde "tilde" wi
+\tilde{$1}$0
+endsnippet
+
+# Greek Alphabet
+snippet alpha "alpha" w
+\alpha$0
+endsnippet
+
+snippet Alpha "Alpha" w
+A$0
+endsnippet
+
+snippet beta "beta" w
+\beta$0
+endsnippet
+
+snippet Beta "Beta" w
+B$0
+endsnippet
+
+snippet gamma "gamma" w
+\gamma$0
+endsnippet
+
+snippet Gamma "Gamma" w
+\Gamma$0
+endsnippet
+
+snippet delta "delta" w
+\delta$0
+endsnippet
+
+snippet Delta "Delta" w
+\Delta$0
+endsnippet
+
+snippet epsilon "epsilon" w
+\epsilon$0
+endsnippet
+
+snippet vareps "varepsilon" w
+\varepsilon$0
+endsnippet
+
+snippet Epsilon "Epsilon" w
+E$0
+endsnippet
+
+snippet zeta "zeta" w
+\zeta$0
+endsnippet
+
+snippet Zeta "Zeta" w
+Z$0
+endsnippet
+
+snippet eta "eta" w
+\eta$0
+endsnippet
+
+snippet Eta "Eta" w
+H$0
+endsnippet
+
+snippet theta "theta" w
+\theta$0
+endsnippet
+
+snippet varthe "vartheta" w
+\vartheta$0
+endsnippet
+
+snippet Theta "Theta" w
+\Theta$0
+endsnippet
+
+snippet iota "iota" w
+\iota$0
+endsnippet
+
+snippet Iota "Iota" w
+I$0
+endsnippet
+
+snippet kappa "kappa" w
+\kappa$0
+endsnippet
+
+snippet Kappa "Kappa" w
+K$0
+endsnippet
+
+snippet lambda "lambda" w
+\lambda$0
+endsnippet
+
+snippet Lambda "Lambda" w
+\Lambda$0
+endsnippet
+
+snippet mu "mu" w
+\mu$0
+endsnippet
+
+snippet Mu "Mu" w
+M$0
+endsnippet
+
+snippet nu "nu" w
+\nu$0
+endsnippet
+
+snippet Nu "Nu" w
+N$0
+endsnippet
+
+snippet xi "xi" w
+\xi$0
+endsnippet
+
+snippet Xi "Xi" w
+\Xi$0
+endsnippet
+
+snippet omicron "omicron" w
+o$0
+endsnippet
+
+snippet Omicron "Omicron" w
+O$0
+endsnippet
+
+snippet pi "pi" w
+\pi$0
+endsnippet
+
+snippet Pi "Pi" w
+\Pi$0
+endsnippet
+
+snippet rho "rho" w
+\rho$0
+endsnippet
+
+snippet varrho "varrho" w
+\varrho$0
+endsnippet
+
+snippet Rho "Rho" w
+P$0
+endsnippet
+
+snippet sigma "sigma" w
+\sigma$0
+endsnippet
+
+snippet Sigma "Sigma" w
+\Sigma$0
+endsnippet
+
+snippet tau "tau" w
+\tau$0
+endsnippet
+
+snippet Tau "Tau" w
+\T$0
+endsnippet
+
+snippet upsilon "upsilon" w
+\upsilon$0
+endsnippet
+
+snippet Upsilon "Upsilon" w
+\Upsilon$0
+endsnippet
+
+snippet phi "phi" w
+\phi$0
+endsnippet
+
+snippet varphi "varphi" w
+\varphi$0
+endsnippet
+
+snippet Phi "Phi" w
+\Phi$0
+endsnippet
+
+snippet chi "chi" w
+\chi$0
+endsnippet
+
+snippet Chi "Chi" w
+X$0
+endsnippet
+
+snippet psi "psi" w
+\psi$0
+endsnippet
+
+snippet Psi "Psi" w
+\Psi$0
+endsnippet
+
+snippet omega "omega" w
+\omega$0
+endsnippet
+
+snippet omgea "omegea" Aw
+\omega$0
+endsnippet
+
+snippet Omega "Omega" w
+\Omega$0
+endsnippet
+
+snippet Omgea "Omgea" Aw
+\Omega$0
+endsnippet
+######
+
+
+
+snippet lamo "lambda_0" w
+\lambda_0$0
+endsnippet
+
+snippet epso "epsilon_0" w
+\epsilon_0$0
+endsnippet
+
+###############
+# Environment #
+###############
+
+snippet beg "begin{} \ end{}" bi
+\begin{$1}
+	${0:${VISUAL}}
+\end{$1}
+endsnippet
+
+snippet begg "beg{}{} \ end{}" bi
+\begin{$1}[$2]
+	${0:${VISUAL}}
+\end{$1}
+endsnippet
+
+snippet cnt "Center" bi
+\begin{center}
+	${0:${VISUAL}}
+\end{center}
+endsnippet
+
+snippet desc "Description" bi
+\begin{description}
+	\item[${1:${VISUAL}}] $0
+\end{description}
+endsnippet
+
+snippet lemma "Lemma" bi
+\begin{lemma}
+	${0:${VISUAL}}
+\end{lemma}
+endsnippet
+
+# snippet prop "Proposition" bi
+# \begin{prop}[$1]
+# 	${0:${VISUAL}}
+# \end{prop}
+# endsnippet
+
+snippet thrm "Theorem" bi
+\begin{theorem}[$1]
+	${0:${VISUAL}}
+\end{theorem}
+endsnippet
+
+snippet post "postulate" bi
+\begin{postulate}[$1]
+	${0:${VISUAL}}
+\end{postulate}
+endsnippet
+
+snippet prf "Proof" bi
+\begin{myproof}[$1]
+	${0:${VISUAL}}
+\end{myproof}
+endsnippet
+
+# snippet def "Definition" bi
+# \begin{definition}[$1]
+# 	${0:${VISUAL}}
+# \end{definition}
+# endsnippet
+
+snippet nte "Note" bi
+\begin{note}[$1]
+	${0:${VISUAL}}
+\end{note}
+endsnippet
+
+snippet prob "Problem" bi
+\begin{problem}[$1]
+	${0:${VISUAL}}
+\end{problem}
+endsnippet
+
+snippet corl "Corollary" bi
+\begin{corollary}[$1]
+	${0:${VISUAL}}
+\end{corollary}
+endsnippet
+
+snippet example "Example" bi
+\begin{example}[$1]
+	${0:${VISUAL}}
+\end{example}
+endsnippet
+
+snippet notion "Notation" bi
+\begin{notation}[$1]
+	$0${VISUAL}
+\end{notation}
+endsnippet
+
+snippet conc "Conclusion" bi
+\begin{conclusion}[$1]
+	$0${VISUAL}
+\end{conclusion}
+endsnippet
+
+snippet fig "Figure environment" bi
+\begin{figure}[${1:htpb}]
+	\centering
+	${2:\includegraphics[width=0.8\textwidth]{$3}}
+	\caption{${4:$3}}
+	\label{fig:${5:${3/\W+/-/g}}}
+\end{figure}
+endsnippet
+
+snippet enum "Enumerate" bi
+\begin{enumerate}
+	\item ${0:${VISUAL}}
+\end{enumerate}
+endsnippet
+
+snippet item "Itemize" bi
+\begin{itemize}
+	\item ${0:${VISUAL}}
+\end{itemize}
+endsnippet
+
+snippet case "cases" bi
+\begin{cases}
+	${0:${VISUAL}}
+\end{cases}
+endsnippet
+
+snippet abs "abstract environment" b
+\begin{abstract}
+	${0:${VISUAL}}
+.\end{abstract}
+endsnippet
+
+snippet tab "tabular / array environment" b
+\begin{${1:t}${1/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}{${2:c}}
+$0${2/(?<=.)(c|l|r)|./(?1: & )/g}
+\end{$1${1/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}
+endsnippet
+
+snippet table "Table environment" b
+\begin{table}[${1:htpb}]
+	\centering
+	\caption{${2:caption}}
+	\label{tab:${3:label}}
+
+	\begin{${4:t}${4/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}{${5:c}}
+		$0${5/(?<=.)(c|l|r)|./(?1: & )/g}
+	\end{$4${4/(t)$|(a)$|(.*)/(?1:abular)(?2:rray)/}}
+\end{table}
+endsnippet
+
+#########
+# Maths #
+#########
+
+snippet subset "subset" w
+\subset 
+endsnippet
+
+snippet in "in " w
+\in 
+endsnippet
+
+snippet nn "cap" w
+\cap 
+endsnippet
+
+snippet uu "cup" w
+\cup 
+endsnippet
+
+snippet uuu "bigcup" w
+\bigcup_{${1:i \in ${2: I}}} $0
+endsnippet
+
+snippet nnn "bigcap" w
+\bigcap_{${1:i \in ${2: I}}} $0
+endsnippet
+
+snippet mb "mathbb" w
+\mathbb{$1}$0
+endsnippet
+
+snippet mm "Inline Math" Aw
+\\(${1}\\)$0
+endsnippet
+
+snippet dm "Display Math" Aw
+\[
+	${1:${VISUAL}}
+\]$0
+endsnippet
+
+snippet ff "Fraction" Aw
+\frac{$1}{$2}$0
+endsnippet
+
+snippet compl "Complement" i
+^{c}
+endsnippet
+
+# snippet ss "Super Script" i
+snippet ss "Super Script" Aw
+^{$1}$0
+endsnippet
+
+snippet sb "subscript" Aw
+_{$1}$0
+endsnippet
+
+snippet __ "subscript" Aw
+_{$1}$0
+endsnippet
+
+snippet sqrt "Square Root" wi
+\sqrt{${1:${VISUAL}}}$0
+endsnippet
+
+snippet sqrto "... Root" wi
+\sqrt[$1]{${2:${VISUAL}}}$0
+endsnippet
+
+snippet bf "Bold" wi
+\bf{${1:${VISUAL}}}$0
+endsnippet
+
+snippet it "Italic" wi
+\it{${1:${VISUAL}}}$0
+endsnippet
+
+snippet un "Underline" wi
+\un{${1:${VISUAL}}}$0
+endsnippet
+
+snippet rm "Text" wi
+\rm{${1:${VISUAL}}}$0
+endsnippet
+
+snippet itm "Item" wi
+\item ${0:${VISUAL}}
+endsnippet
+
+snippet ceil "Ceil" w
+\left\lceil $1 \right\rceil $0
+endsnippet
+
+snippet floor "Floor" w
+\left\lfloor $1 \right\rfloor$0
+endsnippet
+
+snippet pmat "Pmat" w
+\begin{pmatrix} $1 \end{pmatrix} $0
+endsnippet
+
+snippet bmat "Bmat" w
+\begin{bmatrix} $1 \end{bmatrix} $0
+endsnippet
+
+snippet bm "Bmatrix" wi
+\bm{$1}$0
+endsnippet
+
+snippet () "Left( right)" w
+\left( ${1:${VISUAL}} \right) $0
+endsnippet
+
+snippet lr "left( right)" i
+\left( ${1:${VISUAL}} \right) $0
+endsnippet
+
+snippet lr() "left( right)" i
+\left( ${1:${VISUAL}} \right) $0
+endsnippet
+
+snippet lrb "left( right)" i
+\left( ${1:${VISUAL}} \right) $0
+endsnippet
+
+snippet lr| "left| right|" i
+\left| ${1:${VISUAL}} \right| $0
+endsnippet
+
+snippet lr{} "left\{ right\}" i
+\left\\{ ${1:${VISUAL}} \right\\} $0
+endsnippet
+
+snippet lrc "left\{ right\}" i
+\left\\{ ${1:${VISUAL}} \right\\} $0
+endsnippet
+
+snippet lr[] "left[ right]" i
+\left[ ${1:${VISUAL}} \right] $0
+endsnippet
+
+snippet lrs "left[ right]" i
+\left[ ${1:${VISUAL}} \right] $0
+endsnippet
+
+snippet lra "leftangle rightangle" wi
+\left<${1:${VISUAL}} \right>$0
+endsnippet
+
+snippet conj "conjugate" w
+\overline{$1}$0
+endsnippet
+
+snippet sum "sum" w
+\sum_{n=${1:1}}^{${2:\infty}} ${3:a_n z^n}
+endsnippet
+
+snippet taylor "taylor" w
+\sum_{${1:k}=${2:0}}^{${3:\infty}} ${4:c_$1} (x-a)^$1 $0
+endsnippet
+
+snippet lim "limit" w
+\lim_{${1:n} \to ${2:\infty}} 
+endsnippet
+
+snippet limsup "limsup" w
+\limsup_{${1:n} \to ${2:\infty}} 
+endsnippet
+
+snippet prod "product" w
+\prod_{${1:n=${2:1}}}^{${3:\infty}} ${4:${VISUAL}} $0
+endsnippet
+
+snippet part "d/dx" w
+\frac{\partial ${1:V}}{\partial ${2:x}} $0
+endsnippet
+
+snippet inf "\infty" w
+\infty
+endsnippet
+
+snippet rij "mrij" i
+(${1:x}_${2:n})_{${3:$2}\\in${4:\\N}}$0
+endsnippet
+
+snippet implies "Implies" w
+\implies
+endsnippet
+
+snippet =< "Implied by" w
+\impliedby
+endsnippet
+
+snippet iff "iff" w
+\iff
+endsnippet
+
+snippet == "Equals" w
+&= $1 \\\\
+endsnippet
+
+snippet != "Not Equal" w
+\neq 
+endsnippet
+
+snippet <= "leq" w
+\le 
+endsnippet
+
+snippet >= "geq" w
+\ge 
+endsnippet
+
+snippet hat "hat" w
+\hat{$1}$0
+endsnippet
+
+snippet ahat "A-hat" w
+\hat{A}
+endsnippet
+
+snippet bhat "B-hat" w
+\hat{B}
+endsnippet
+
+snippet chat "c-hat" w
+\hat{C}
+endsnippet
+
+snippet dag "dagger" w
+^{\dag}
+endsnippet
+
+snippet sx "S_x" w
+S_x
+endsnippet
+
+snippet sxs "S_x^2" w
+S_x^2
+endsnippet
+
+snippet sy "S_y" w
+S_y
+endsnippet
+
+snippet sys "S_y^2" w
+S_y^2
+endsnippet
+
+snippet sz "S_z" w
+S_z
+endsnippet
+
+snippet szs "S_z^2" w
+S_z^2
+endsnippet
+
+snippet sxm "S_x matrix" w
+\frac{\hbar}{2}\begin{bmatrix} 0 & 1\\\ 1 & 0 \end{bmatrix}
+endsnippet
+
+snippet sym "S_y matrix" w
+\frac{\hbar}{2}\begin{bmatrix} 0 & -i\\\ i & 0 \end{bmatrix}
+endsnippet
+
+snippet szm "S_z matrix" w
+\frac{\hbar}{2}\begin{bmatrix} 1 & 0\\\ 0 & -1 \end{bmatrix}
+endsnippet
+
+snippet pk "|+>" w
+\cv{1\\ 0}
+endsnippet
+
+snippet pk_x "|+>_x" w
+\frac{1}{\sqrt{2}}\cv{1\\ 1}
+endsnippet
+
+snippet pk_y "|+>_y" w
+\frac{1}{\sqrt{2}}\cv{1\\ i}
+endsnippet
+
+snippet mk "|->" w
+\cv{0\\ 1}
+endsnippet
+
+snippet mk_x "|->_x" w
+\frac{1}{\sqrt{2}}\cv{1\\ -1}
+endsnippet
+
+snippet mk_y "|->_y" w
+\frac{1}{\sqrt{2}}\cv{1\\ -i}
+endsnippet
+
+snippet bs "Bold S" w
+/bf{S}
+endsnippet
+
+snippet hbar "h-bar" w
+\hbar$0
+endsnippet
+
+snippet su "spin up" w
+\frac{\hbar{2}$0
+endsnippet
+
+snippet sd "spin down" w
+\frac{- \hbar{2}$0
+endsnippet
+
+snippet cald "mathcal D" w
+\mathcal{D}$0
+endsnippet
+
+snippet cal "mathcal" wi
+\mathcal{$1}$0
+endsnippet
+
+snippet calt "mathcal T" w
+\mathcal{T}$0
+endsnippet
+
+snippet call "mathcal L" w
+\mathcal{L}$0
+endsnippet
+
+snippet calm "mathcal M" w
+\mathcal{M}$0
+endsnippet
+
+snippet calk "mathcal K" w
+\mathcal{K}$0
+endsnippet
+
+snippet calh "mathcal H" w
+\mathcal{H}$0
+endsnippet
+
+snippet ham "Hamiltonian operator" w
+\hat{\mathcal{H}}
+endsnippet
+
+snippet s2 "S^2" w
+\mathbb{S}^2
+endsnippet
+
+snippet par "partial" w
+\partial
+endsnippet
+
+snippet parr "partial_" wi
+\partial_{$1}$0
+endsnippet
+
+snippet parx "partial_x" w
+\partial_{x}$0
+endsnippet
+
+snippet pary "partial_y" w
+\partial_{y}$0
+endsnippet
+
+#snippet nn "Tikz node" w
+#\node[$5] (${1/[^0-9a-zA-Z]//g}${2}) ${3:at (${4:0,0}) }{$${1}$};
+#$0
+#endsnippet
+
+snippet lll "l" w
+\ell
+endsnippet
+
+snippet times "cross" w
+\times 
+endsnippet
+
+snippet '(?<!\\)(sin|cos|arccot|cot|csc|ln|log|exp|star|perp)' "ln" rw
+\\`!p snip.rv = match.group(1)`
+endsnippet
+
+snippet <! "normal" Aw
+\triangleleft 
+endsnippet
+
+snippet "((\d|\w)+)invs" "inverse" Awr
+`!p snip.rv = match.group(1)`^{-1}
+endsnippet
+
+snippet !> "mapsto" Aw
+\mapsto 
+endsnippet
+
+##########
+# TABLES #
+#########
+
+pre_expand "create_table(snip)"
+snippet "gentbl(\d+)x(\d+)" "Generate table of *width* by *height*" r
+endsnippet
+
+pre_expand "add_row(snip)"
+snippet "tr(\d+)" "Add table row of dimension ..." r
+endsnippet
+
+###########
+# VECTORS #
+###########
+snippet inp "Innep Prodcut for vectors" wi
+\inp{$1}{$2}$0
+endsnippet
+
+snippet norm "norm" wi
+\norm{$1}
+endsnippet
+
+# snippet ef "Electric Field" w
+# \vec{E}(\vec{r})
+# endsnippet
+
+# snippet vv "Vector v" w
+# \vec{v}
+# endsnippet
+#
+# snippet vx "Vector x" w
+# \vec{x}
+# endsnippet
+#
+# snippet vy "Vector y" w
+# \vec{y}
+# endsnippet
+#
+# snippet vg "Vector g" w
+# \vec{g}
+# endsnippet
+#
+# snippet vgd "Vector g derivative" w
+# \vec{g'}
+# endsnippet
+
+snippet cr "Cursive r" w
+\scriptr
+endsnippet
+
+snippet bcr "Bold cursive r" w
+\boldscriptr
+endsnippet
+
+###########
+# POSTFIX #
+###########
+
+snippet dot "cdot" w
+\cdot
+endsnippet
+
+snippet int "Integral" w
+\int
+endsnippet
+
+snippet dint "Definite Integral" wi
+\int_{$1}^{$2}$0
+endsnippet
+
+snippet oint "oint" w
+\oint
+endsnippet
+
+snippet lint "line integral" w
+\int_c
+endsnippet
+
+snippet dx "d/dx" w
+\frac{d}{dx}
+endsnippet
+
+snippet ddx "df/dx" wi
+\frac{d$1}{dx}$0
+endsnippet
+
+snippet grad "Gradient" w
+\vec{\nabla}$0
+endsnippet
+
+snippet div "Divergence" w
+\vec{\nabla} \cdot$0
+endsnippet
+
+snippet curl "Curl" w
+\vec{\nabla} \times$0
+endsnippet
+
+snippet cv "column matrix" wi
+\cv{$1}$0
+endsnippet
+
+snippet bm "bmatrix" wi
+\bm{$1}$0
+endsnippet
+
+snippet vec "\vec{}" wi
+\vec{$1}$0
+endsnippet
+
+snippet vv "vec" Aw
+\vec{$1}$0
+endsnippet
+
+snippet bar "bar" wi
+\bar{${1:${VISUAL}}}$0
+endsnippet
+
+snippet "\<(.*?)\|" "bra?" wri
+\bra{`!p snip.rv = match.group(1).replace('q', f'\psi').replace('f', f'\phi')`}
+endsnippet
+
+snippet "\|(.*?)\>" "ket?" wri
+\ket{`!p snip.rv = match.group(1).replace('q', f'\psi').replace('f', f'\phi')`}
+endsnippet
+
+snippet bra "bra" wi
+\bra{$1}$0
+endsnippet
+
+snippet ket "ket" wi
+\ket{$1}$0
+endsnippet
+
+snippet <> "braket <>" wi
+\ip{$1}{$2}$0
+endsnippet
+
+snippet ip "inner product" wi
+\ip{$1}{$2}$0
+endsnippet
+
+snippet braket "braket1" wi
+\bracket{$1}$0
+endsnippet
+
+snippet >< "projection" wi
+\op{$1}{$2}$0
+endsnippet
+
+snippet op "outer product" wi
+\op{$1}{$2}$0
+endsnippet
+
+snippet ketbra "ket bra" wi
+\op{$1}$0
+endsnippet
+
+snippet ev "expectation value" wi
+\ev{$1}{$2}$0
+endsnippet
+
+snippet mel "matrix element" wi
+\mel{$1}{$2}{$3}$0
+endsnippet
+
+snippet "(.*)\\bra{(.*?)}([^\|]*?)\>" "braket" Awri
+`!p snip.rv = match.group(1)`\braket{`!p snip.rv = match.group(2)`}{`!p snip.rv = match.group(3).replace('q', f'\psi').replace('f', f'\phi')`}
+endsnippet
+
+
+#############
+# PRE-AMBLE #
+#############
+
+snippet pac "usepackage - removes square braces if options removed" b
+\usepackage`!p snip.rv='[' if t[1] else ""`${1:options}`!p snip.rv = ']' if t[1] else ""`{${2:package}}$0
+endsnippet
+
+snippet docls "Document Class" bA
+\documentclass{$1}$0
+endsnippet
+
+
+#########
+# OTHER #
+#########
+
+snippet acl "Acroynm expanded" bi
+\acl{${1:acronym}}
+endsnippet
+
+snippet ac "Acroynm normal" bi
+\ac{${1:acronym}}
+endsnippet
+
+snippet ni "Non-indented paragraph" bi
+\noindent
+endsnippet
+
+
+############
+# SECTIONS #
+############
+
+snippet chap "Chapter" wi
+\chapter{$1${VISUAL}}
+endsnippet
+
+snippet sec "Section" wi
+\section{$1${VISUAL}}
+endsnippet
+
+snippet sec* "Section*" wi
+\section*{$1${VISUAL}}
+endsnippet
+
+snippet sub "Subsection" wi
+\subsection{$1${VISUAL}}
+endsnippet
+
+snippet sub* "Subsection*" wi
+\subsection*{$1${VISUAL}}
+endsnippet
+
+snippet subsub "Subsection" wi
+\subsubsection{$1${VISUAL}}
+endsnippet
+
+snippet subsub* "Subsubsection" wi
+\subsubsection*{$1${VISUAL}}
+endsnippet
+
+snippet para "Paragraph" wi
+\paragraph{$1${VISUAL}}
+endsnippet
+
+snippet para* "Paragraph*" wi
+\paragraph*{$1${VISUAL}}
+endsnippet
+
+snippet subpara "Sub Paragraph" wi
+\subparagraph{$1${VISUAL}}
+endsnippet
+
+snippet subpara* "Sub Paragraph*" wi
+\subparagraph*{$1${VISUAL}}
+endsnippet
+
+snippet chapl "Chapter with label" wi
+\chapter{$1${VISUAL}}
+\label{cha:${2:${1/\W+/-/g}}}
+endsnippet
+
+snippet secl "Section with label" wi
+\section{$1${VISUAL}}
+\label{sec:${2:${1/\W+/-/g}}}
+endsnippet
+
+snippet sec*l "Section* with label" wi
+\section*{$1${VISUAL}}
+\label{sec:${2:${1/\W+/-/g}}}
+endsnippet
+
+snippet subl "Subsection with label" wi
+\subsection{$1${VISUAL}}
+\label{sub:${2:${1/\W+/-/g}}}
+endsnippet
+
+snippet sub*l "Subsection* with label" wi
+\subsection*{$1${VISUAL}}
+\label{sub:${2:${1/\W+/-/g}}}
+endsnippet
+
+snippet subsubl "Subsection with label" wi
+\subsubsection{$1${VISUAL}}
+\label{ssub:${2:${1/\W+/-/g}}}
+endsnippet
+
+snippet subsub*l "Subsubsection with label" wi
+\subsubsection*{$1${VISUAL}}
+\label{ssub:${2:${1/\W+/-/g}}}
+endsnippet
+
+snippet parl "Paragraph with label" wi
+\paragraph{$1${VISUAL}}
+\label{par:${2:${1/\W+/-/g}}}
+endsnippet
+
+snippet par*l "Paragraph* with label" wi
+\paragraph*{$1${VISUAL}}
+\label{par:${2:${1/\W+/-/g}}}
+endsnippet
+
+snippet subparl "Sub Paragraph with label" wi
+\subparagraph{$1${VISUAL}}
+\label{subp:${2:${1/\W+/-/g}}}
+endsnippet
+
+snippet subpar*l "Sub Paragraph* with label" wi
+\subparagraph*{$1${VISUAL}}
+\label{subp:${2:${1/\W+/-/g}}}
+endsnippet
+
+########################
+#Non-Euclidean Geometry#
+########################
+snippet de "Euclidean-distance" w
+d_E
+endsnippet
+
+########################
+##########Box###########
+########################
+snippet fb "simple box" wi
+\fb{
+	$1
+}$0
+endsnippet
+
+snippet fbi "simple box with item" wi
+\fb{
+	\begin{itemize}
+		$1
+	\end{itemize}
+}$0
+endsnippet
+
+snippet fbe "simple box with enumerate" wi
+\fb{
+	\begin{enumerate}[label=(\roman*)]
+		$1
+	\end{enumerate}
+}$0
+endsnippet
+
+######################
+priority 1000
+snippet math "mathematica block" w
+math $1 math$0
+endsnippet
+
+priority 10000
+snippet 'math(.*)math' "evaluate mathematica" wr
+`!p
+import subprocess
+code = 'ToString[' + match.group(1) + ', TeXForm]'
+snip.rv = subprocess.check_output(['wolframscript', '-code', code])
+`
+endsnippet
+
+#####################
+snippet map "mapping" w
+{$1}: {$2} \to {$3}
+endsnippet
+
+snippet oo "infinity" w
+\infty
+endsnippet
+
+snippet ooo "infinity auto" Aw
+\infty
+endsnippet
+
+snippet bk "break" w
+\hfill \break
+endsnippet
+
+snippet inv "inverse" w
+^{-1}
+endsnippet
+
+snippet \\ "backslash" w
+\smallsetminus
+endsnippet
+
+snippet to "to" w
+\to
+endsnippet
+
+snippet O "empty set" w
+\varnothing
+endsnippet
+
+snippet top "topology" w
+\mathcal{T}
+endsnippet
+
+snippet def "definition" bi
+\begin{defn}{$1}
+	${0:${VISUAL}}
+\end{defn}
+endsnippet
+
+snippet defm "definition important" bi
+\begin{defm}{$1}
+	${0:${VISUAL}}
+\end{defm}
+endsnippet
+
+snippet thm "theorem" bi
+\begin{thm}{$1}
+	${0:${VISUAL}}
+\end{thm}
+endsnippet
+
+snippet lem "lemma" bi
+\begin{lem}{$1}
+	${0:${VISUAL}}
+\end{lem}
+endsnippet
+
+snippet cor "corollary" bi
+\begin{cor}{$1}
+	${0:${VISUAL}}
+\end{cor}
+endsnippet
+
+snippet prop "Proposition" bi
+\begin{prop}{$1}
+	${0:${VISUAL}}
+\end{prop}
+endsnippet
+
+snippet pf "proof"
+\begin{pf}{$1}
+	${0:${VISUAL}}
+\end{pf}
+endsnippet
+
+snippet remark "remark" bi
+\begin{remarkbox}
+	${0:${VISUAL}}
+\end{remarkbox}
+endsnippet
+
+snippet ex "Ex" bi
+\begin{ex}{$1}
+	${0:${VISUAL}}
+\end{ex}
+endsnippet
+
+snippet noot "noot" bi
+\begin{noot}
+	${0:${VISUAL}}
+\end{noot}
+endsnippet
+
+snippet rn "Rn" w
+\R^{n}
+endsnippet
+
+snippet star "star" w
+\star
+endsnippet
+
+snippet enumm "Enumerate Arabic)" bi
+\begin{enumerate}[label=\arabic*)]
+	\item ${0:${VISUAL}}
+\end{enumerate}
+endsnippet

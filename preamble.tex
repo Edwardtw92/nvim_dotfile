@@ -1,0 +1,529 @@
+%%%%%%%%%%%%%%%%%%%%%%%
+% Some basic packages %
+%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{enumitem}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%
+% Date %
+%%%%%%%%
+\usepackage{datetime2}
+%%%%%%%%
+
+
+%%%%%%%%%%%%%%
+% Scripted r %
+%%%%%%%%%%%%%%
+\usepackage{calligra}
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scriptr}{\mathcalligra{r}\,}
+\newcommand{\boldscriptr}{\pmb{\mathcalligra{r}}\,}
+% \allowdisplaybreaks
+%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Don't indent paragraphs, leave some space between them %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{parskip}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%$$
+% Easy quotation mark %
+%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{csquotes}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hide page number when page is empty %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{emptypage}
+\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{xcolor}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%
+% Math %
+%%%%%%%%
+\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+\usepackage{physics}
+\usepackage{dsfont}
+
+% Fancy script capitlas
+\usepackage{mathrsfs}
+\usepackage{cancel}
+
+% Bold math
+\usepackage{bm}
+
+% System of equations
+\usepackage{systeme}
+%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%
+% Other packages %
+%%%%%%%%%%%%%%%%%%
+\usepackage{nicefrac,fancyhdr,hyperref,graphicx,adjustbox}
+\hypersetup{colorlinks=true,urlcolor=blue,citecolor=blue,linkcolor=blue}
+% \usepackage[left=1.5cm, right=1.5cm, top=1.3cm, includehead, includefoot]{geometry}
+% \usepackage[left=1.0cm, right=1.0cm, top=1.0cm, bottom= 1.0cm]{geometry}
+\usepackage[d]{esvect}
+\usepackage{tikz}
+\usepackage{esint}
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+\usepackage{setspace}
+% \doublespacin
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%
+%% commands %%
+%%%%%%%%%%%%%%
+
+%%%%%%%%
+% Sets %
+%%%%%%%%
+\newcommand{\C}{\ensuremath{\mathbb{C}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\Zm}{\Z_m}
+\newcommand{\Zp}{\Z_p}
+\newcommand{\F}{\ensuremath{\mathbb{F}}}
+% \newcommand{\O}{\ensuremath{\emptyset}}
+%%%%%%%%
+
+
+%%%%%%%%%%
+% logics %
+%%%%%%%%%%
+\newcommand{\xor}{\veebar}
+\newcommand{\nand}{\uparrow}
+%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Make implies and impliedby shorter %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\implies\Rightarrow
+\let\impliedby\Leftarrow
+\let\iff\Leftrightarrow
+% \let\epsilon\varepsilon
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add \contra symbol to denote contradiction %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{stmaryrd} % for \lightning
+\newcommand\contra{\scalebox{1.5}{$\lightning$}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Command for short corrections %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Usage: 1+1=\correct{3}{2}
+\definecolor{correct}{HTML}{009900}
+\newcommand\correct[2]{\ensuremath{\:}{\color{red}{#1}}\ensuremath{\to }{\color{correct}{#2}}\ensuremath{\:}}
+\newcommand\green[1]{{\color{correct}{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%
+% horizontal rule %
+%%%%%%%%%%%%%%%%%%%
+\newcommand\hr{
+    \noindent\rule[0.5ex]{\linewidth}{0.5pt}
+}
+%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%
+% hide parts %
+%%%%%%%%%%%%%%
+\newcommand\hide[1]{}
+%%%%%%%%%%%%%%
+
+
+%%%%%%%%%
+% bases %
+%%%%%%%%%
+\newcommand{\mA}{\mathcal{A}}
+\newcommand{\mB}{\mathcal{B}}
+\newcommand{\mC}{\mathcal{C}}
+\newcommand{\mD}{\mathcal{D}}
+\newcommand{\mE}{\mathcal{E}}
+\newcommand{\mL}{\mathcal{L}}
+\newcommand{\mM}{\mathcal{M}}
+\newcommand{\mO}{\mathcal{O}}
+\newcommand{\mP}{\mathcal{P}}
+\newcommand{\mS}{\mathcal{S}}
+\newcommand{\mT}{\mathcal{T}}
+%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%
+% linear algebra %
+%%%%%%%%%%%%%%%%%%
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\adj}{\operatorname{adj}}
+% \newcommand{\rank}{\operatorname{rank}}
+\newcommand{\spn}{\operatorname{Span}}
+\newcommand{\proj}{\operatorname{proj}}
+\newcommand{\prp}{\operatorname{perp}}
+\newcommand{\refl}{\operatorname{refl}}
+% \newcommand{\tr}{\operatorname{tr}}
+\newcommand{\nul}{\operatorname{Null}}
+\newcommand{\nully}{\operatorname{nullity}}
+\newcommand{\range}{\operatorname{Range}}
+\renewcommand{\ker}{\operatorname{Ker}}
+\newcommand{\col}{\operatorname{Col}}
+\newcommand{\row}{\operatorname{Row}}
+\newcommand{\cof}{\operatorname{cof}}
+\newcommand{\Num}{\operatorname{Num}}
+\newcommand{\Id}{\operatorname{Id}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\ipb}{\langle \thinspace, \rangle}
+%\newcommand{\ip}[2]{\left\langle #1, #2\right\rangle} % inner products
+\newcommand{\M}[2]{M_{#1\times #2}(\F)}
+\newcommand{\RREF}{\operatorname{RREF}}
+\newcommand{\REF}{\operatorname{REF}}
+\newcommand{\cv}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+%\newenvironment{amatrix}[1]{\left[\begin{array}{@{}*{\numexpr#1-1}{c}|c@{}}}{\end{array}\right]}
+\newcommand{\am}[2]{\begin{amatrix}{#1} #2 \end{amatrix}}
+%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%
+% vectors %
+%%%%%%%%%%%
+\newcommand{\vzero}{\vv{0}}
+%\newcommand{\va}{\vv{a}}
+%\newcommand{\vb}{\vv{b}}
+\newcommand{\vc}{\vv{c}}
+\newcommand{\vd}{\vv{d}}
+\newcommand{\ve}{\vv{e}}
+\newcommand{\vf}{\vv{f}}
+\newcommand{\vg}{\vv{g}}
+\newcommand{\vh}{\vv{h}}
+\newcommand{\vl}{\vv{\ell}}
+\newcommand{\vm}{\vv{m}}
+\newcommand{\vn}{\vv{n}}
+\newcommand{\vp}{\vv{p}}
+\newcommand{\vq}{\vv{q}}
+\newcommand{\vr}{\vv{r}}
+\newcommand{\vs}{\vv{s}}
+\newcommand{\vt}{\vv{t}}
+%\newcommand{\vu}{\vv{u}}
+\newcommand{\vvv}{{\vv{v}}}
+\newcommand{\vw}{\vv{w}}
+\newcommand{\vx}{\vv{x}}
+\newcommand{\vy}{\vv{y}}
+\newcommand{\vz}{\vv{z}}
+%%%%%%%%%%%
+
+
+%%%%%%%%%%%
+% display %
+%%%%%%%%%%%
+\newcommand{\ds}{\displaystyle}
+%\newcommand{\qand}{\quad\text{and}}
+\newcommand{\qandq}{\quad\text{and}\quad}
+\newcommand{\hint}{\textbf{Hint: }}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+%%%%%%%%%%%
+
+
+%%%%%%%%
+% misc %
+%%%%%%%%
+\newcommand{\area}{\operatorname{area}}
+\newcommand{\vol}{\operatorname{vol}}
+\newcommand{\red}[1]{{\color{red} #1}}
+\newcommand{\rc}{\red{\checkmark}}
+%%%%%%%%
+
+
+%%%%%%%%%
+% other %
+%%%%%%%%%
+%\newcommand{\bd}[2]{\begin{tcolorbox}[title={Definition: #1}, colback=red!5,colframe=red!75!black] #2 \end{tcolorbox} \hfill \break}
+\newcommand{\bp}[2]{\begin{tcolorbox}[title={Proposition: #1}, colback=blue!5,colframe=blue!75!black] #2 \end{tcolorbox} \hfill \break}
+\newcommand{\bt}[2]{\begin{tcolorbox}[title={Theorem: #1}, colback=blue!5,colframe=blue!75!black] #2 \end{tcolorbox} \hfill \break}
+\newcommand{\bc}[2]{\begin{tcolorbox}[title={Corollary: #1}, colback=blue!5,colframe=blue!75!black] #2 \end{tcolorbox} \hfill \break}
+%\newcommand{\dv}[1]{\vv{#1}=\cv{#1 _1\\ \vdots\\ #1 _n}}
+\newcommand{\ti}[1]{\textit{#1}}
+%%%%%%%%%
+\newcommand{\normalisation}[1]{\frac{\vv{#1}}{\norm{\vv{#1}}}}
+% \newcommand{\q}{\begin{flushright} Q.E.D.\end{flushright}}
+% \newcommand{\projv}[2]{\proj_{\vv{#1}}\left(\vv{#2}\right)}
+% \newcommand{\prpv}[2]{\prp_{\vv{#1}}(\vv{#2})}
+\newcommand{\ca}[1]{\begin{cases}#1\end{cases}}
+\newcommand{\st}{\text{ s.t. }}
+\newcommand{\rowm}[1]{\row(#1)}
+\newcommand{\nulm}[1]{\nul(#1)}
+\newcommand{\balign}[1]{\begin{align*}#1\end{align*}}
+\newcommand{\sm}[3]{\begin{amatrix}{#1}{#2} #3 \end{amatrix}}
+\newcommand{\smt}[1]{\begin{smatrixt} #1 \end{smatrixt}}
+\newcommand{\cA}[1]{\cae{A}{#1}}
+\newcommand{\elam}[1]{E_{\lam}(#1)}
+\newcommand{\degg}[1]{\deg(#1)}
+
+% algebra
+\newcommand{\ncr}[2]{\binom{#1}{#2}}
+\newcommand{\gcdd}[2]{\gcd(#1, #2)}
+\DeclareMathOperator{\lcd}{ord}
+\newcommand{\modd}[1]{\pmod{#1}}
+\newcommand{\con}{\equiv}
+\newcommand{\ncon}{\not\equiv}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\sgn}{sgn}
+
+% group theory
+\DeclareMathOperator{\Perm}{Perm}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\Cl}{Cl}
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Iso}{Iso}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\Image}{Image}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Inn}{Inn}
+
+% quantum theory
+\newcommand{\I}{\mathds{1}}
+\DeclareMathAlphabet{\mathbbold}{U}{bbold}{m}{n}
+\newcommand{\zero}{\mathbbold{0}}
+\DeclareMathOperator{\spec}{spec}
+
+
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+	\end{array}\right]
+}
+
+\newenvironment{smatrix}[2]{%
+	\left[\begin{array}{@{}*{#1}{c}|@{}*{#2}{c}}
+	}{%
+	\end{array}\right]
+}
+
+\newenvironment{smatrixt}{%
+	\left[\begin{array}{ccc|ccc}
+	}{%
+	\end{array}\right]
+}
+
+% \setlength\parindent{0pt}
+
+%\setlength{\parskip}{0.75\baselineskip plus 2pt}
+%\usepackage[skip=0.75\baselineskip plus 2pt]{parskip}
+%\setlength\parskip{12pt plus 1em}
+
+
+% DEC
+\newcommand{\Bd}[1]{\mbox{Bd}(#1)}
+\newcommand{\Int}[1]{\mbox{Int}(#1)}
+\newcommand{\Ext}[1]{\mbox{Ext}(#1)}
+
+
+% Environments
+\makeatother
+% For box around Definition, Theorem, \ldots
+\usepackage{mdframed}
+\mdfsetup{skipabove=1em,skipbelow=0em}
+\theoremstyle{definition}
+\newmdtheoremenv[nobreak=true]{definitie}{Definitie}
+\newmdtheoremenv[nobreak=true]{eigenschap}{Eigenschap}
+\newmdtheoremenv[nobreak=true]{gevolg}{Gevolg}
+\newmdtheoremenv[nobreak=true]{lemma}{Lemma}
+\newmdtheoremenv[nobreak=true]{propositie}{Propositie}
+\newmdtheoremenv[nobreak=true]{stelling}{Stelling}
+\newmdtheoremenv[nobreak=true]{wet}{Wet}
+\newmdtheoremenv[nobreak=true]{postulaat}{Postulaat}
+\newmdtheoremenv{conclusie}{Conclusie}
+\newmdtheoremenv{toemaatje}{Toemaatje}
+\newmdtheoremenv{vermoeden}{Vermoeden}
+\newtheorem*{herhaling}{Herhaling}
+\newtheorem*{intermezzo}{Intermezzo}
+\newtheorem*{notatie}{Notatie}
+\newtheorem*{observatie}{Observatie}
+\newtheorem*{oef}{Oefening}
+\newtheorem*{opmerking}{Opmerking}
+\newtheorem*{praktisch}{Praktisch}
+\newtheorem*{probleem}{Probleem}
+\newtheorem*{terminologie}{Terminologie}
+\newtheorem*{toepassing}{Toepassing}
+\newtheorem*{uovt}{UOVT}
+% \newtheorem*{vb}{Voorbeeld}
+\newtheorem*{vraag}{Vraag}
+
+\newmdtheoremenv[nobreak=true]{definition}{Definition}
+\newtheorem*{eg}{Example}
+\newtheorem*{notation}{Notation}
+\newtheorem*{previouslyseen}{As previously seen}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+\newtheorem*{problem}{Problem}
+\newtheorem*{observe}{Observe}
+\newtheorem*{property}{Property}
+\newtheorem*{intuition}{Intuition}
+% \newmdtheoremenv[nobreak=true]{prop}{Proposition}
+\newmdtheoremenv[nobreak=true]{theorem}{Theorem}
+\newmdtheoremenv[nobreak=true]{corollary}{Corollary}
+
+% End example and intermezzo environments with a small diamond (just like proof
+% environments end with a small square)
+\usepackage{etoolbox}
+\AtEndEnvironment{vb}{\null\hfill$\diamond$}%
+\AtEndEnvironment{intermezzo}{\null\hfill$\diamond$}%
+% \AtEndEnvironment{opmerking}{\null\hfill$\diamond$}%
+
+% Fix some spacing
+% http://tex.stackexchange.com/questions/22119/how-can-i-change-the-spacing-before-theorems-with-amsthm
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=\parskip \thm@postskip=0pt
+}
+
+
+%======================================================================
+% Todonotes and inline notes in fancy boxes
+\usepackage{todonotes}
+\usepackage{tcolorbox}
+
+% Make boxes breakable
+\tcbuselibrary{breakable}
+
+% def
+\newenvironment{defn}[1]{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=blue!60!black,
+    title={Def: #1},
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\newenvironment{defm}[1]{\begin{tcolorbox}[
+    arc=0mm,
+    % colback=white,
+    % colback=yellow!15!white,
+    colback=blue!8!white,
+    colframe=blue!60!black,
+    title={Def: #1},
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\definecolor{purple}{rgb}{76, 0, 153}
+\newenvironment{thm}[1]{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=purple!60!black,
+    title={Theorem: #1},
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\definecolor{orange}{rgb}{255, 128, 0}
+\newenvironment{lem}[1]{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=orange!60!black,
+    title={Lemma: #1},
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\definecolor{lightblue}{rgb}{0, 178, 255}
+\newenvironment{cor}[1]{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=lightblue!60!black,
+    title={Corollary: #1},
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\definecolor{peach}{rgb}{255, 0, 172}
+\newenvironment{prop}[1]{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=peach!60!black,
+    title={Proposition: #1},
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\definecolor{lightgrey}{rgb}{64, 64, 64}
+\newenvironment{pf}[1]{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=lightgrey!60!black,
+    title={pf: #1},
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\newenvironment{ex}[1]{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=green!60!black,
+    title={Ex: #1},
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\newenvironment{remarkbox}{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=red!60!black,
+    title=Remark,
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+\newenvironment{noot}{\begin{tcolorbox}[
+    arc=0mm,
+    colback=white,
+    colframe=white!60!black,
+    title=Note,
+    fonttitle=\sffamily,
+    breakable
+]}{\end{tcolorbox}}
+
+
+% Figure support as explained in my blog post.
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+% Fix some stuff
+% %http://tex.stackexchange.com/questions/76273/multiple-pdfs-with-page-group-included-in-a-single-page-warning
+\pdfsuppresswarningpagegroup=1
+
+\author{Edward Chang}
