@@ -3,6 +3,13 @@ The contents of this repository will eventually be moved to a repository with my
 
 ![Screenshot](https://github.com/Edwardtw92/nvim_dotfile/blob/main/screenshot.jpg)
 
+## Usage
+Follow below to see which plugins to include (not all are listed). Put [zathura](https://github.com/Edwardtw92/nvim_dotfile/tree/main/zathura) in `~/.config/` (assuming the user is using Linux or MacOS), and put the rest of the files in `~/.config/nvim/`. One can also move [preamble.tex](https://github.com/Edwardtw92/nvim_dotfile/blob/main/preamble.tex) and [template.tex](https://github.com/Edwardtw92/nvim_dotfile/blob/main/template.tex) to a desired directory.
+
+Note: After moving [preamble.tex](https://github.com/Edwardtw92/nvim_dotfile/blob/main/preamble.tex), one needs to edit `line 2` of [template.tex](https://github.com/Edwardtw92/nvim_dotfile/blob/main/template.tex) such that the preamble.tex is imported from the correct directory.
+
+When writing a `.tex` file, copy and rename [template.tex](https://github.com/Edwardtw92/nvim_dotfile/blob/main/template.tex).
+
 ## LaTeX Essential
 In order to have a working LaTeX environment, ensure [LaTeX](https://www.latex-project.org/get/), [Neovim](https://neovim.io/), a Neoivim Plugin manager (I am using [vim-plug](https://github.com/junegunn/vim-plug)), and a pdf viewer (I am using [Zathura](https://pwmt.org/projects/zathura/))are installed
 The only essential Neoivim plugins are:
@@ -36,7 +43,7 @@ augroup vimtex
 augroup END
 ```
 
-Note: Put Zathura directory in the parent directory of nvim (which should be something like ~/.config/)
+Note: Put [Zathura](https://github.com/Edwardtw92/nvim_dotfile/tree/main/zathura) directory in the parent directory of nvim (which should be something like ~/.config/)
 
 ## Utilities:
 - [nerdtree](https://github.com/preservim/nerdtree)
